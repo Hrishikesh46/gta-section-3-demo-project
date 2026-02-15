@@ -19,6 +19,7 @@ jobs:
 
   # job to deploy the code
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code
